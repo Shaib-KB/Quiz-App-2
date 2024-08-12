@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Quiz App</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+
+  <body>
+    <header>
+      <h1>Quiz App</h1>
+    </header>
+    <main>
+     <form id="quizForm"></form>
+      <section class="dataInput">
+        <label for="QuestionForm">Your new question:</label>
+        <textarea name="Question" id="QuestionForm" maxlength="76" ></textarea>
+        <div id="charCountQuestion"> 76 characters remaining </div>
+      </section>          
+      <br>
+      <section class= "Answer">
+        <label for="AnswerForm">Your answer:</label>
+        <textarea name="Answer" id="AnswerForm" maxlength="150" required></textarea> 
+        <div id="charCountAnswer">150 characters remaining</div>  
+      </section>  
+        <br>
+        <section class="Tag">
+        <label for="TagForm">Tag:</label>
+        <input type="text" id="TagForm" required/>
+      </section>
+      <br>
+      <section  class= "Submit">
+        <button>Submit</button>
+      </section>
+    </form>
+
+
+    </main>
+      <script src="./Javascripts/form.js"></script>
+
+    <footer class="footer">
+      <a href="index.html" class="footer__link">
+        <img
+          class="footer__icon"
+          src="./assets/home.png"
+          alt="home"
+          id="bookmarkIcon"
+        />
+      </a>
+      <a href="bookmark.html" class="footer__link footer">
+        <img
+          class="footer__icon"
+          src="./assets/bookmark_filled.png"
+          alt="bookmark filled"
+        />
+      </a>
+      <a href="form.html" class="footer__link footer__link--active">
+        <img class="footer__icon" src="./assets/add.png" alt="add" />
+      </a>
+      <a href="profile.html" class="footer__link">
+        <img class="footer__icon" src="./assets/profile.png" alt="profile" />
+      </a>
+    </footer>
+    <script src="./Javascripts/form.js"></script>
+  </body>
+</html>
